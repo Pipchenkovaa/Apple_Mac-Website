@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: 'Manrope';
+    display: grid;
+    background-color: #f0f0f0;
+    overflow-x: auto;
+}
+
+.header {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 20px;
+    float: left;
+    opacity: 18%;
+    padding-left: 10px;
+}
+
+.actions {
+    margin: 20px;
+    float: right;
+    padding-right: 10px;
+}
+
+.actions a {
+    font-weight: 300;
+    margin: 20px;
+    color: #42474e;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.actions a:hover {
+    color: #262729;
+    transition: all 0.380s;
+}
+
+#bbuy {
+    padding: 5px 25px;
+    border: 2px solid #0066cc;
+    border-radius: 50px;
+    color: #0066cc;
+    font-size: 17px;
+    box-shadow: transparent;
+    transition: 0.5 ease;
+}
+
+#bbuy:hover, :focus {
+    background: #0066cc;
+    color: #f0f0f0;
+    box-shadow: 0 0 0.5px #0066cc, 0 0 0.5px #0066cc, 0 0 2px #0066cc, 0 0 8px #0066cc;
+    transition: all 0.380s;
+}
+
+.accessories-title {
+    background-color: #e2e2e2;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex; 
+}
+
+@keyframes text-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
+
+#first-title {
+    opacity: 0;
+    animation-name: text-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+    text-align: left;
+    color: transparent;
+    font-size: 70px;
+    margin-top: 135px;
+    margin-left: 90px;
+    line-height: 1.15;
+    font-weight: 900; 
+    background-image: url('/images/back2.jpeg');
+    background-size: cover;
+    background-clip: text;
+    z-index: 2;
+}
+
+.accessories-title .mac-charge {
+    z-index: 0;
+    width: 22%;
+}
+
+.search {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #262729;
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.button-search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 60px auto;
+    bottom: 2.2vw;
+}
+
+.group {
+    text-align: center;
+    display: flex;
+    width: 600px;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    max-width: 600px;
+    background: #f0f0f0;
+    border: 1.5px solid #262729;
+    border-radius: 50px;
+}
+   
+.input {
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 1.5px solid transparent;
+    border-radius: 50px;
+    outline: none;
+    background-color: #f0f0f0;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 18px;
+}
+   
+.input::placeholder {
+    color: #7f7f82;
+    font-family: 'Manrope';
+    font-size: 17px;
+    font-weight: 250;
+}
+   
+.input:focus, input:hover {
+    color: #7f7f82;
+    outline: none;
+    border: 1.5px solid #0066cc;
+    background-color: #fff;
+}
+   
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #7f7f82;
+    width: 1rem;
+    height: 1rem;
+} 
+   
+.accessories-type1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #262729;
+    margin-top: 70px;
+    font-size: 36px;
+    font-weight: 700;
+}   
+
+/* essential tools */
+.adapter {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 170px;
+}   
+   
+#name-accessories1 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#price-acessories1 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+#add-to-bag {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 67px;
+    border: 2px solid #0066cc;
+    background-color: #ffffff;
+    border-radius: 50px;
+    color: #0066cc;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#add-to-bag:hover, :focus {
+    background-color: #0066cc;
+    color: #ffffff;
+    box-shadow: 0 0 0.5px #0066cc, 0 0 0.5px #0066cc, 0 0 2px #0066cc, 0 0 8px #0066cc;
+    transition: all 0.380s;
+}
+
+.keyboard {
+    height: 455px;
+    width: 1087px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 15px 0 0 170px;
+}
+
+#black-key {
+    margin-top: 45px;
+}
+
+#name-accessories2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-bottom: 15px;
+}
+
+#price-acessories2 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.mouse {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 15px;
+}
+
+#apple-mouse {
+    margin-top: 15px;
+}
+
+#name-accessories3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#price-acessories3 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.trackpad {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 15px;
+}
+
+#apple-trackpad {
+    margin-top: 50px;
+}
+
+#name-accessories4{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#price-acessories4 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.box {
+    white-space: nowrap; 
+    overflow-x: auto;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.little-box {
+    margin-top: 0;
+    overflow: auto;
+    flex-direction: column;
+    margin: auto;
+    height: 500px;
+    width: 1115px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 170px;
+}
+
+/* charging tools */
+.accessories-type2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #262729;
+    margin-top: 70px;
+    font-size: 36px;
+    font-weight: 700;
+}   
+
+.usb-c {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+#USB-C {
+    margin-top: 26px;
+}
+
+#name-accessories5 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#price-acessories5 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.usb-c2 {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 20px;
+}
+
+#USB-C2 {
+    margin-top: 17px;
+}
+
+#name-accessories6 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#price-acessories6 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.cardreader {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 20px;
+}
+
+#card-reader{
+    margin-top: 12px;
+}
+
+#name-accessories7 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#price-acessories7 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.cabbel1 {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 20px;
+}
+
+#madsafe-cabel1 {
+    margin-top: 46px;
+}
+
+#name-accessories8 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#price-acessories8 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.cabbel2 {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 20px;
+}
+
+#madsafe-cabel2 {
+    margin-top: 17px;
+}
+
+#name-accessories9 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#price-acessories9 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.blok {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 20px 0 0 20px;
+}
+
+#power-blok {
+    margin-top: 17px;
+}
+
+#name-accessories10 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#price-acessories10 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.box2 {
+    white-space: nowrap; 
+    overflow-x: auto;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.little-box2 {
+    margin-top: 0;
+    flex-direction: column;
+    margin: auto;
+    height: 500px;
+    width: 1115px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 170px;
+}
+
+/* essentials tools */
+.sony {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+#ps-sony {
+    margin-top: 60px;
+}
+
+#name-accessories11 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 43px;
+    margin-bottom: 15px;
+}
+
+#price-acessories11 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.case {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 20px;
+}
+
+#mc-case {
+    margin-top: 60px;
+}
+
+#name-accessories12 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 43px;
+    margin-bottom: 15px;
+}
+
+#price-acessories12 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.bag {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 20px;
+}
+
+#mac-bag {
+    margin-top: 13px;
+}
+
+#name-accessories13 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 43px;
+    margin-bottom: 15px;
+}
+
+#price-acessories13 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.airpods {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 20px;
+}
+
+#Airpods {
+    margin-top: 34px;
+    margin-bottom: 30px;
+}
+   
+#name-accessories13 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#price-acessories13 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.airpods3 {
+    height: 430px;
+    width: 350px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px 0 0 20px;
+}
+
+#Airpods3 {
+    margin-top: 34px;
+    margin-bottom: -11.5px;
+}
+   
+#name-accessories14 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#price-acessories14 {
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.service1 {
+    display: inline-block;
+    text-align: center;
+    color: #262729;
+    margin-top: 180px;
+    margin-left: 180px;
+}
+
+.service2 {
+    display: inline-block;
+    text-align: center;
+    color: #262729;
+    margin-top: 10px;
+    margin-left: 95px;
+}
+
+.service3 {
+    display: inline-block;
+    text-align: center;
+    color: #262729;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+.h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.h2, .h22 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.h11 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.learn-Button {
+    padding: 6px 35px;
+    border: 2px solid #262729;
+    background-color: #262729;
+    border-radius: 50px;
+    color: #f0f0f0;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#second-button {
+    color: #f0f0f0;
+}
+
+/* footer */
+.footer {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer img {
+    margin: 20px;
+    padding-bottom: 7px;
+    float: left;
+    opacity: 18%;
+}
+
+.footer-menu {
+    display: inline-flex;
+    margin: 20px;
+}
+
+.footer-menu .ditale-info {
+    text-decoration: none;
+    color: #42474e;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1.5px solid #d1d1d1;
+    transition: all 0.380s;
+}
+
+.footer-menu p {
+    padding-right: 20px;
+    color: #42474e;
+}

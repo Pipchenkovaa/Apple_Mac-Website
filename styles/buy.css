@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #262729;
+}
+
+body {
+    display: grid;
+    overflow-x: auto;
+}
+
+#menu-333 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 20px;
+    float: left;
+    opacity: 90%;
+    padding-left: 10px;
+}
+
+.actions {
+    margin: 20px;
+    float: right;
+    padding-right: 10px;
+}
+
+.actions a {
+    font-weight: 300;
+    margin: 20px;
+    color: #d8d8d8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.actions a:hover {
+    color: #f0f0f0;
+    transition: all 0.380s;
+}
+
+#bbuy {
+    padding: 5px 25px;
+    border: 2px solid #0066cc;
+    background: #0066cc;
+    border-radius: 50px;
+    color: #f0f0f0;
+    font-size: 17px;
+
+}
+
+.main {
+    display: block;
+    text-align: center;
+}
+
+@keyframes price-text-animation {
+    from {
+        opacity: 0;
+        top: 20px
+    }
+    to {
+        opacity: 1;
+        top: 0px
+    }
+}
+
+.place-order {
+    position: relative;
+    opacity: 0;
+    animation-name: price-text-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-size: 70px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    line-height: 100%;
+    font-weight: 900; 
+    color: transparent;
+    background-image: url('/images/back5.jpg');
+    background-size: cover;
+    background-clip: text;
+}
+
+.order-form {
+    display: grid;
+    justify-content: center;
+    max-width: 370px;
+    padding: 35px;
+    margin: 20px auto;
+    box-shadow: 0 0 3.5rem 0 rgba(72, 238, 233, 0.345);
+    background-color: #00000037;
+    backdrop-filter: blur(5px);
+    border-radius: 27px;
+}
+
+.input {
+    padding: 14px 10px;
+    margin-bottom: 8px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    color: #f0f0f0;
+    padding-left: 1.2rem;
+}
+
+.input:hover, .input:focus {
+    border: 1px solid #0066cc;
+    transition: all 0.380s;
+    color: #f0f0f0;
+}
+
+.input::placeholder {
+    color: #7f7f82;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 250;
+}
+  
+.order-button {
+    padding: 15px 30px;
+    margin-top: 5px;
+    background-color: #0066cc;
+    border: 2px solid #0066cc;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 350;
+    font-size: 20px;
+    box-shadow: transparent;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+  
+.order-button:hover, .order-button:focus {
+    background: #0066cc;
+    color: #f0f0f0;
+    box-shadow: 0 0 0.5px #0066cc, 0 0 0.5px #0066cc, 0 0 2px #0066cc, 0 0 8px #0066cc;
+    transition: all 0.380s;
+}

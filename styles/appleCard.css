@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: 'Manrope';
+    display: grid;
+    background-color: #f0f0f0;
+    overflow-x: auto;
+}
+
+.header {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    z-index: 2;
+}
+
+.logo {
+    margin: 20px;
+    float: left;
+    opacity: 18%;
+    padding-left: 10px;
+    z-index: 2;
+}
+
+.actions {
+    margin: 20px;
+    float: right;
+    padding-right: 10px;
+    z-index: 2;
+}
+
+.actions a {
+    font-weight: 300;
+    margin: 20px;
+    color: #42474e;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.actions a:hover {
+    color: #262729;
+    transition: all 0.380s;
+}
+
+#bbuy {
+    padding: 5px 25px;
+    border: 2px solid #0066cc;
+    border-radius: 50px;
+    color: #0066cc;
+    font-size: 17px;
+    box-shadow: transparent;
+    transition: 0.5 ease;
+}
+
+#bbuy:hover, :focus {
+    background: #0066cc;
+    color: #f0f0f0;
+    box-shadow: 0 0 0.5px #0066cc, 0 0 0.5px #0066cc, 0 0 2px #0066cc, 0 0 8px #0066cc;
+    transition: all 0.380s;
+}
+
+.gradient {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 780px;
+    margin-bottom: 50px;
+    z-index: 0;
+    opacity: 60%;
+}
+
+@keyframes logo-card-animation {
+    from {
+        opacity: 0;
+        top: 30px
+    }
+    to {
+        opacity: 1;
+        top: 0
+    }
+}
+
+.card-info {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    opacity: 0;
+    animation-name: logo-card-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.about-card {
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: 40px;
+    color: #262729;
+    line-height: 1;
+}
+
+.appleCard_iphone {
+    z-index: 0;
+    margin-top: 2px;
+} 
+
+.text-about-card {
+    text-align: center;
+    padding: 130px 160px 130px 160px;
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.block1 {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    border-radius: 30px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .iphone {
+        margin-top: 70px;
+    }
+
+    .block1-2 {
+        display: block;
+        margin-top: auto;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-left: 40px;
+
+        .robertson {
+            margin-top: 20px;
+        }
+
+        .ditales {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 50px;
+            line-height: 1.3;
+        }
+    }
+}
+
+.block2 {
+    display: flex;
+    background-color: #1a1a1c;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 30px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .dollar {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .block2-2 {
+        display: block;
+        margin-top: 100px;
+        color: #f0f0f0;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-right: 40px;
+
+        #ditales-gradient {
+            color: transparent;
+            margin-top: 20px;
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 50px;
+            line-height: 1.5;
+            background-image: url('/images/back5.jpg');
+            background-size: cover;
+            background-clip: text;
+        }
+    }
+}
+
+.conteiners-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 30px;
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.block3 {
+    display: inline-block;
+    background-color: #1a1a1c;
+    justify-content: center;
+    border-radius: 30px;
+    width: 625px;
+    margin-left: 50px;
+    margin-right: auto;
+
+    .graf {
+        margin-top: -10px;
+    }
+
+    .block3-2 {
+        display: block;
+        margin-top: 80px;
+        color: #f0f0f0;
+        margin-right: 50px;
+        margin-left: 80px;
+
+        #auto {
+            color: transparent;
+            font-size: 45px;
+            font-weight: 700;
+            background-image: url('/images/back2.jpeg');
+            background-size: cover;
+            background-clip: text;
+        }
+
+        #auto2 {
+            color: #f0f0f0;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 80px;
+        }
+
+        #gradient2 {
+            color: #f0f0f0;
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.block4 {
+    display: inline-block;
+    background-color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    width: 625px;
+    margin-left: auto;
+    margin-right: auto; 
+
+    .apple-pay1 {
+        display: inline-block;
+        margin: 60px;
+        margin-bottom: 80px;
+    }
+
+    .apple-pay2 {
+        display: inline-block;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .block4-2 {
+        display: block;
+        margin-top: 80px;
+        color: #f0f0f0;
+        font-weight: 700;
+        margin-right: 50px;
+        margin-left: 50px;
+
+        #gradient3 {
+            color: transparent;
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            background-image: url('/images/back2.jpeg'); 
+            background-size: cover;
+            background-clip: text;  
+        }
+    }
+} 
+
+/* footer */
+.footer {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer img {
+    margin: 20px;
+    padding-bottom: 7px;
+    float: left;
+    opacity: 18%;
+}
+
+.footer-menu {
+    display: inline-flex;
+    margin: 20px;
+}
+
+.footer-menu .ditale-info {
+    text-decoration: none;
+    color: #42474e;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1.5px solid #d1d1d1;
+    transition: all 0.380s;
+}
+
+.footer-menu p {
+    padding-right: 20px; 
+    color: #42474e;
+}

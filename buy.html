@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/buy.css">
+	<script src="./scripts/buy.js" defer></script>
+	<title>Order</title>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<a href="main.html">
+				<img src="/images/logo-white.png" alt="Apple Logo" width="70" id="logo">
+			</a>
+		</div>
+		<nav class="actions">
+			<a href="main.html">Home</a>
+			<a href="price.html">Price</a>
+			<a href="accessories.html">Accessories</a>
+			<a href="appleCard.html">Apple Card</a>
+			<a href="contacts.html">Contacts</a>
+			<a href="#" id="bbuy">Buy</a>
+		</nav>
+	</header>
+	<main class="main">
+		<div class="order-title">
+			<h1 class="place-order" id="order">Place an order. <br>We'll contact you soon!</h1>
+		</div>
+		<form action="" method="post" class="order-form">
+			<input type="text" class="input" placeholder="Name*" id="name">
+			<input type="text" class="input" placeholder="E-mail*" id="email">
+			<input type="text" class="input" placeholder="Phone number*" id="phone">
+			<input type="text" class="input" placeholder="Product name*" id="product">
+			<button class="order-button" type="submit" id="order-action">Order</button>
+		</form>
+	</main>
+</body>
+</html>

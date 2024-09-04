@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: 'Manrope';
+    display: grid;
+    background-color: #f0f0f0;
+    overflow-x: auto;
+}
+
+.header {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.logo {
+    margin: 20px;
+    float: left;
+    opacity: 90%;
+    padding-left: 10px;
+    z-index: 2;
+}
+
+.actions {
+    margin: 20px;
+    float: right;
+    position: relative;
+    z-index: 2;
+    padding-right: 10px;
+}
+
+.actions a {
+    font-weight: 300;
+    margin: 20px;
+    color: #d8d8d8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.actions a:hover {
+    color: #f0f0f0;
+    transition: all 0.380s;
+}
+
+#bbuy {
+    padding: 5px 25px;
+    border: 1.5px solid #0066cc;
+    border-radius: 50px;
+    color: #0066cc;
+    font-size: 17px;
+    box-shadow: transparent;
+    transition: 0.5 ease;
+}
+
+#bbuy:hover, :focus {
+    background: #0066cc;
+    color: #f0f0f0;
+    text-shadow: 0 0 0.5px #ffffff, 0 0 0.5px #ffffff, 0 0 0.5px #ffffff;
+    box-shadow: 0 0 0.5px #0066cc, 0 0 0.5px #0066cc, 0 0 2px #0066cc, 0 0 6px #0066cc;
+    transition: all 0.380s;
+}
+
+.back {
+    position: flex;
+    top: 0;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+@keyframes price-text-animation {
+    from {
+        opacity: 0;
+        top: 50px
+    }
+    to {
+        opacity: 1;
+        top: 0
+    }
+}
+
+.header-price-info {
+    position: absolute;
+    text-align: center;
+		align-items: center;
+		margin: 0 auto;
+    transform: translate(50%, 10%);
+    opacity: 0;
+    animation-name: price-text-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.main-price {
+    font-size: 210px;
+    margin-top: 95px;
+    font-weight: 900;
+    color: #d8d8d8;
+}
+
+.about-prices {
+    font-size: 43px;
+    margin-top: -20px;
+    font-weight: 900;
+    color: #d8d8d8;
+}
+
+.name {
+    display: flex;
+    position: relative;
+    font-size: 33px;
+    margin-left: 105px;
+    margin-bottom: -50px;
+    margin-top: 25px;
+    font-weight: 700;
+    color: #262729;
+}
+
+/* macbook pro */
+.prise-macbook-pro {
+    display: flex;
+    color: #262729;
+}
+
+.mac-photo {
+    display: inline-flex;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+}
+
+#Buy-button {
+    text-decoration: none;
+    padding: 4px 28px;
+    border: 2px solid #0066cc;
+    border-radius: 50px;
+    color: #0066cc;
+    font-size: 17px;
+    box-shadow: transparent;
+    transition: 0.5 ease;
+    font-weight: 300;
+}
+
+#Buy-button:hover, :focus {
+    background: #0066cc;
+    color: #f0f0f0;
+    box-shadow: 0 0 0.5px #0066cc, 0 0 0.5px #0066cc, 0 0 2px #0066cc, 0 0 8px #0066cc;
+    transition: all 0.380s;
+}
+
+.create-line {
+    display: flex;
+    width: 85%;
+    border-top: 2.5px solid #d1d1d1;
+    border-radius: 70px;
+    margin: 0px auto;
+}
+
+.info1 {
+    font-size: 21px;
+    margin-top: 90px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.info1 #cost11 {
+    margin-bottom: 15px;
+    margin-top: 3px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #6f6f6f;
+}
+
+.info1 #cost22 {
+    margin-bottom: 15px;
+    margin-top: 3px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #6f6f6f;
+}
+
+.info1 #cost33 {
+    margin-top: 3px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #6f6f6f;
+}
+
+.info2 {
+    display: flex;
+    font-size: 21px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.info2 #cost2 {
+    margin-left: 140px;
+}
+
+.info3 {
+    display: flex;
+    font-size: 21px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.info3 #cost3 {
+    margin-left: 140px;
+}
+
+/* imac */
+.prise-imac {
+    display: flex;
+    color: #262729;
+}
+
+.imac-photo {
+    display: inline-flex;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+}
+
+.inf1 {
+    font-size: 21px;
+    margin-top: 150px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.inf1 #cost-i1 {
+    margin-bottom: 3px;
+}
+
+.inf1 #cost-i11 {
+    font-size: 17px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #6f6f6f;
+}
+
+.inf2 {
+    font-size: 21px;
+    margin-top: 150px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.inf2 #cost-i11 {
+    font-size: 17px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #6f6f6f;
+}
+
+.inf3 {
+    font-size: 21px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.inf3 #cost-i33 {
+    font-size: 17px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #6f6f6f;
+}
+
+/* mac mini */
+.price-mini {
+    display: flex;
+    color: #262729;
+}
+
+.mini-photo {
+    display: inline-flex;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 170px;
+}
+
+.Inf1 {
+    font-size: 21px;
+    margin-top: 130px;
+    margin-left: 140px;
+    font-weight: 500;
+}
+
+.Inf1 #cost-mini1 {
+    margin-bottom: 3px;
+}
+
+.Inf1 #cost-mini11 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+
+.Inf2 {
+    font-size: 21px;
+    margin-top: 130px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.Inf2 #cost-mini2 {
+    margin-bottom: 3px;
+}
+
+.Inf2 #cost-mini22 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+
+.Inf3 {
+    font-size: 21px;
+    margin-top: 130px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.Inf3 #cost-mini3 {
+    margin-bottom: 3px;
+}
+
+.Inf3 #cost-mini33 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+
+/* mac studio */
+.price-stud {
+    display: flex;
+    color: #262729;
+}
+
+.stud-photo {
+    display: inline-flex;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 180px;
+}
+
+.inF1 {
+    font-size: 21px;
+    margin-top: 130px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.inF1 #cost-stud1 {
+    margin-bottom: 3px;
+}
+
+.inF1 #cost-stud11 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+
+.inF2 {
+    font-size: 21px;
+    margin-top: 130px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.inF2 #cost-stud2 {
+    margin-bottom: 3px;
+}
+
+.inF2 #cost-stud22 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+
+/* mac pro */
+.price-pro {
+    display: flex;
+    color: #262729;
+}
+
+.pro-photo {
+    display: inline-flex;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+}
+
+.iNf1 {
+    font-size: 21px;
+    margin-top: 130px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.iNf1 #cost-pro1 {
+    margin-bottom: 3px;
+}
+
+.iNf1 #cost-pro11 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+
+.iNf2 {
+    font-size: 21px;
+    margin-top: 130px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.iNf2 #cost-pro2 {
+    margin-bottom: 3px;
+}
+
+.iNf2 #cost-pro22 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+
+/* Studio Display */
+.price-dspl {
+    display: flex;
+    color: #262729;
+}
+
+.dspl-photo {
+    display: inline-flex;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+}
+
+.Info1 {
+    font-size: 21px;
+    margin-top: 140px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.Info1 #cost-dspl1 {
+    margin-bottom: 3px;
+}
+
+.Info1 #cost-dspl11 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+
+.Info2 {
+    font-size: 21px;
+    margin-top: 140px;
+    margin-left: 130px;
+    font-weight: 500;
+}
+
+.Info2 #cost-dspl2 {
+    margin-bottom: 3px;
+}
+
+.Info2 #cost-dspl22 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+}
+
+.footer {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer img {
+    margin: 20px;
+    padding-bottom: 7px;
+    float: left;
+    opacity: 18%;
+}
+
+.footer-menu {
+    display: inline-flex;
+    margin: 20px;
+}
+
+.footer-menu .ditale-info {
+    text-decoration: none;
+    color: #42474e;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1.5px solid #d1d1d1;
+    transition: all 0.380s;
+}
+
+.footer-menu p {
+    padding-right: 20px;
+    color: #42474e;
+}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: 'Manrope';
+    display: grid;
+    background-color: #f0f0f0;
+    overflow-x: auto;
+}
+
+body {
+    font-family: 'Manrope';
+    display: grid;
+    background-color: #f0f0f0;
+    overflow-x: auto;
+}
+
+#menu-333 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 20px;
+    float: left;
+    opacity: 18%;
+    padding-left: 10px;
+}
+
+.actions {
+    margin: 20px;
+    float: right;
+    padding-right: 10px;
+}
+
+.actions a {
+    font-weight: 300;
+    margin: 20px;
+    color: #42474e;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.actions a:hover {
+    color: #262729;
+    transition: all 0.380s;
+}
+
+#bbuy {
+    padding: 5px 25px;
+    border: 2px solid #0066cc;
+    border-radius: 50px;
+    color: #0066cc;
+    font-size: 17px;
+    box-shadow: transparent;
+    transition: 0.5 ease;
+}
+
+#bbuy:hover, :focus {
+    background: #0066cc;
+    color: #f0f0f0;
+    box-shadow: 0 0 0.5px #0066cc, 0 0 0.5px #0066cc, 0 0 2px #0066cc, 0 0 8px #0066cc;
+    transition: all 0.380s;
+}
+
+.online-store {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #262729;
+    width: 900px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    .first {
+        font-size: 40px;
+        font-weight: 550;
+        color: #262729;
+        margin-bottom: 10px;
+    }
+
+    .second {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 7px;
+    }
+}
+
+.link {
+    font-size: 20px;
+    font-weight: 300;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.link2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #1f74c9;
+    text-decoration: none;
+}
+
+.CONTACT {
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    color: transparent;
+    background-image: url('/images/back2.jpeg');
+    background-size: cover;
+    background-clip: text;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.adress {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+    width: 900px;
+    background-color: #262729;
+    padding: 40px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    .Hhead {
+        font-weight: 550;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .hhead {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 7px;
+    }
+}
+
+.footer {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer img {
+    margin: 20px;
+    padding-bottom: 7px;
+    float: left;
+    opacity: 18%;
+}
+
+.footer-menu {
+    display: inline-flex;
+    margin: 20px;
+}
+
+.footer-menu .ditale-info {
+    text-decoration: none;
+    color: #42474e;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1.5px solid #d1d1d1;
+    transition: all 0.380s;
+}
+
+.footer-menu p {
+    padding-right: 20px;
+    color: #42474e;
+}
