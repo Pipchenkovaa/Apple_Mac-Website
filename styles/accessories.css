@@ -94,7 +94,7 @@ body {
     margin-left: 90px;
     line-height: 1.15;
     font-weight: 900; 
-    background-image: url('./images/back2.jpeg');
+    background-image: url('../images/back2.jpeg');
     background-size: cover;
     background-clip: text;
     z-index: 2;

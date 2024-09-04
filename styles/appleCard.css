@@ -188,7 +188,7 @@ body {
             font-weight: 700;
             margin-bottom: 50px;
             line-height: 1.5;
-            background-image: url('./images/back5.jpg');
+            background-image: url('../images/back5.jpg');
             background-size: cover;
             background-clip: text;
         }
@@ -229,7 +229,7 @@ body {
             color: transparent;
             font-size: 45px;
             font-weight: 700;
-            background-image: url('./images/back2.jpeg');
+            background-image: url('../images/back2.jpeg');
             background-size: cover;
             background-clip: text;
         }
@@ -285,7 +285,7 @@ body {
             font-size: 45px;
             font-weight: 700;
             margin-bottom: 30px;
-            background-image: url('./images/back2.jpeg');
+            background-image: url('../images/back2.jpeg');
             background-size: cover;
             background-clip: text;
         }

@@ -87,7 +87,7 @@ body {
     line-height: 100%;
     font-weight: 900; 
     color: transparent;
-    background-image: url('./images/back5.jpg');
+    background-image: url('../images/back5.jpg');
     background-size: cover;
     background-clip: text;
 }

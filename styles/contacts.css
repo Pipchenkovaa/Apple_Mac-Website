@@ -124,7 +124,7 @@ body {
     font-size: 60px;
     font-weight: 900;
     color: transparent;
-    background-image: url('./images/back2.jpeg');
+    background-image: url('../images/back2.jpeg');
     background-size: cover;
     background-clip: text;
     margin-top: 50px;
